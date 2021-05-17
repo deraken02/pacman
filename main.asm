@@ -6,8 +6,8 @@
 	DS.B 9, $00		;9 zéro pour faire 16 en tout
 
 	;; Le joypad va controler manuellement le scrolling on automatisera après.
-	;; On vérifie si le bouton Haut ou Bas sont pressés
-
+	;; On vérifie si les boutons Haut ou Bas sont pressés
+	;; Plus de détails dans le fichier notice.md
 	JOYPAD1 EQU $4016 	;On récupère l'état des huit boutons séquentiellement à l'adresse 4016
 	LDA #1			;On réinitialise la lecture du Joypad
 	STA JOYPAD1		;En écrivant un 1
